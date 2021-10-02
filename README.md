@@ -1,2 +1,6 @@
 # CCC-Junior-Solution
-contains solutions of J3-J5
+Author: Olivia Yan
+- contains solutions of J3-J5
+- contains mandarin commits
+
+
