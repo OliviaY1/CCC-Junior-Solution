@@ -13,8 +13,16 @@ data[::-1] : 旋转大lst
 
 ## set 
 ### basic function
-`.add()` `.remove()` `set1 == set2`
-empty set:`a = set()`
+`.add()` `.remove()` `set1 == set2`  `a = set()`  
+add any iterable: **`a.update(lst)`**  
 
 ### transfer list into set
 `a = set([lst])` --> lst == [1,2,3] and a == {1,2,3}
+
+## Data Structure: TREE
+
+
+## return 
+`lst.append()`在原lst上修改，return NoneType
+string的method都是make a copy
+
