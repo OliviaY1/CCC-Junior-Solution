@@ -10,3 +10,11 @@ The list is called lst: `min([min(i) for i in lst])`
 `return zip(*data[::-1])`
 data[::-1] : 旋转大lst
  *：拆分大lst
+
+## set 
+### basic function
+`.add()` `.remove()` `set1 == set2`
+empty set:`a = set()`
+
+### transfer list into set
+`a = set([lst])` --> lst == [1,2,3] and a == {1,2,3}
