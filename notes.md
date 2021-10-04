@@ -13,11 +13,11 @@ data[::-1] : 旋转大lst
 
 ## set 
 ### basic function
-`.add()` `.remove()` `.discard()` `set1 == set2`  `a = set()` 
+`.add()` `.remove()` `.discard()` `set1 == set2`  `a = set()`  
 add any iterable: **`a.update(lst)`**  
-join two sets: `set3 = set1.union(set2)` `set1.update(set2)`
+join two sets: `set3 = set1.union(set2)` `set1.update(set2)`  
 find the common elements: `set1.intersection_update(set2)` `set3 = set1.intersection(set2)`  
-find the different elements: `set1.symmetric_difference_update(set2)` `set3 = set1.symmetric_difference(set2)`
+find the different elements: `set1.symmetric_difference_update(set2)` `set3 = set1.symmetric_difference(set2)`  
 contain elements that one has but the other does not: `set3 = set1.difference(set2)`
 
 `a.isdisjoint(b)` if a contains any element of b  
@@ -25,10 +25,13 @@ contain elements that one has but the other does not: `set3 = set1.difference(se
 ### transfer list into set
 `a = set([lst])` --> lst == [1,2,3] and a == {1,2,3}
 
-## Data Structure: TREE
-
+## Data Structure: TREE (dictionary)
+![Tree Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)
+a hierarchical tree structure with a root value and subtrees of children with a parent node: a set of linked nodes
 
 ## return 
 `lst.append()`在原lst上修改，return NoneType
 string的method都是make a copy
+
+
 
