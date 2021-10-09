@@ -26,8 +26,29 @@ contain elements that one has but the other does not: `set3 = set1.difference(se
 `a = set([lst])` --> lst == [1,2,3] and a == {1,2,3}
 
 ## Data Structure: TREE (dictionary)
-![Tree Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)
+![Tree Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)  
 a hierarchical tree structure with a root value and subtrees of children with a parent node: a set of linked nodes
+### Breadth First Search (用while循环)
+```python
+def BFS(lst, node, visted, queue):
+  visted.append(node)
+  queue.append(node)
+  
+  while queue: # 可以输入任何情况：find the shortest path
+    # 每一次都pop掉第一个value，然后添加它的children
+    r = queue.pop(0)
+    
+    for item in lst[r]:
+      if item not in visited:
+        visited.append(item)
+        queue.append(item)
+```
+* 注意node和lst的index 的对应
+* 可以用于find the shortest path
+
+
+### Depth First Search
+
 
 ## return 
 `lst.append()`在原lst上修改，return NoneType
