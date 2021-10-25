@@ -1,4 +1,4 @@
-## 2D list
+# 2D list
 ### create a 2D list
 `a = [[0 for a in range(5)] for i in range(5)]`
 `a = [[] for i in range(5)]`  
@@ -10,8 +10,9 @@ The list is called lst: `min([min(i) for i in lst])`
 `return zip(*data[::-1])`
 data[::-1] : 旋转大lst
  *：拆分大lst
-
-## set 
+ 
+---
+# set 
 ### basic function
 `.add()` `.remove()` `.discard()` `set1 == set2`  `a = set()`  
 add any iterable: **`a.update(lst)`**  
@@ -25,7 +26,24 @@ contain elements that one has but the other does not: `set3 = set1.difference(se
 ### transfer list into set
 `a = set([lst])` --> lst == [1,2,3] and a == {1,2,3}
 
-## Data Structure: TREE (dictionary)
+# dictionary
+`if a in dict` is to check whether the value a is in ==the keys of dict==
+`dict[key]` returns the value
+
+# defining a function
+- You can operate other defined function in a function
+- You can edit absolute variables that are outside the function 
+
+# str
+- How to edit string without make a copy: ==slice== `a = a[1:] + a[:1]` instead of `a[1:] = 'abc'`
+- slice: ends when the ending index is bigger than its length
+    - `a[1:10]` -> 123 when a=='0123'
+
+# list
+- How to add a list without `append`: `lst + [elements]` return a combined list
+- `lst.append()` return None, its orginial lst changes
+---
+# Data Structure: TREE (dictionary)
 ![Tree Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)  
 a hierarchical tree structure with a root value and subtrees of children with a parent node: a set of linked nodes
 ### Breadth First Search (用while循环)
@@ -48,11 +66,4 @@ def BFS(lst, node, visted, queue):
 
 
 ### Depth First Search
-
-
-## return 
-`lst.append()`在原lst上修改，return NoneType
-string的method都是make a copy
-
-
 
