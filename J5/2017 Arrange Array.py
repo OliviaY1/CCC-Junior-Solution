@@ -10,7 +10,8 @@ for wood in woods:
     wood_dic[wood] += 1
 
 # create a sum_dic: keys is the sum of two woods (can be the same length); values is the occurance / the fence length
-wood_length = wood_dic.keys()
+sum_dic = {}
+wood_length = [i for i in wood_dic.keys()]
 for up in range (len(wood_length)): # should the last one be included?
   if wood_dic[wood_length[up]] >1:
     start = up # include up itself
@@ -21,19 +22,20 @@ for up in range (len(wood_length)): # should the last one be included?
     
     if up == down:
       if summ not in sum_dic:
-        sum_dic[summ] = wood_dic[keys[first]] //2
+        sum_dic[summ] = wood_dic[wood_length[up]] //2
       else:
-        sum_dic[summ] +=  wood_dic[keys[first]] //2
+        sum_dic[summ] +=  wood_dic[wood_length[up]] //2
       
     else: # two woods are not the same length
       if summ not in sum_dic:
-        sum_dic[summ] = min(wood_dic[keys[first]], wood_dic[keys[second]])
+        sum_dic[summ] = min(wood_dic[wood_length[up]], wood_dic[wood_length[down]])
       else:
-        sum_dic[summ] += min(wood_dic[keys[first]], wood_dic[keys[second]])
+        sum_dic[summ] += min(wood_dic[wood_length[up]], wood_dic[wood_length[down]])
         
 # in sum_dic, find the maximum values. If there are more than one max values, store the occurance of different keys
 fence_lengths = sum_dic.values()
 max_length, heights = 0, 0
+
 for fence_length in fence_lengths:
   if fence_length > max_length:
     max_length = fence_length
