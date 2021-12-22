@@ -29,7 +29,7 @@ contain elements that one has but the other does not: `set3 = set1.difference(se
 # dictionary
 `if a in dict` is to check whether the value a is in ==the keys of dict==
 `dict[key]` returns the value
-
+`dic.values()` `dic.keys()` is not subscriptable! It does not return a list; You have to use `keys = [i for i in dic.keys()]` or `for i in dic.values()`
 # defining a function
 - You can operate other defined function in a function
 - You can edit absolute variables that are outside the function 
@@ -42,6 +42,7 @@ contain elements that one has but the other does not: `set3 = set1.difference(se
 # list
 - How to add a list without `append`: `lst + [elements]` return a combined list
 - `lst.append()` return None, its orginial lst changes
+
 ---
 # Data Structure: TREE (dictionary)
 ![Tree Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)  
@@ -63,7 +64,4 @@ def BFS(lst, node, visted, queue):
 ```
 * 注意node和lst的index 的对应
 * 可以用于find the shortest path
-
-
-### Depth First Search
 
