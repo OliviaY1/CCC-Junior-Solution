@@ -1,7 +1,4 @@
 # CCC-Junior-Solution
-Author: Olivia Yan
-- contains solutions of J3-J5
-
 记录练习次数：
 要求：J3题目1+1，J4题目1+2，J5题目1+3；三年为一组练习
 
