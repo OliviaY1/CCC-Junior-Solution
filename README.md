@@ -4,7 +4,7 @@
 
 **必须在2.1号前将三套试卷过第一遍**
 #### TODO
-- [ ] 2020 J5: time limit (bfs)   
+- [ ] 2020 J5: time limit (bfs / while loop)   
 - [ ] 2019 J5: time limit + wrong answer (brute force)
 
 
@@ -29,4 +29,12 @@
 |2014|||
 |2013|||
 
+===
+# Leetcode Studying -> TODO
+- [x] 323 Coin Change (dp)
+**dynamic programming 每次做决定，取决于有多少可能性，而不是前一个和前两个**
 
+- [ ] 275 H-index II (binary) hindex不知道怎么带上
+- [ ] longest increasing substring (dp)
+- [ ] word search (dfs)
+- [ ] 81 sorted array
