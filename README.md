@@ -4,7 +4,7 @@
 
 **必须在2.1号前将三套试卷过第一遍**
 #### TODO
-- [ ] 2020 J5: time limit (bfs / while loop)   
+- [ ] 2020 J5: bfs 13/15 (1000*1000 input 超出时长) 
 - [ ] 2019 J5: time limit + wrong answer (brute force)
 
 
@@ -12,7 +12,7 @@
 |Year|Date J3|Date J4|Date J5|
 |---|---|---|---|
 |2021|Jan9|Jan9|Jan9|
-|2020|Jan9|Jan9|Jan9|
+|2020|Jan9|Jan9|Jan9, Jan20|
 |2019|Jan13|Jan13|Jan14|
 
 ### 第二套
