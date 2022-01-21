@@ -5,10 +5,49 @@
 |--|--|
 |每次执行下一个recursion时，决定因素是curr的位置: `curr[0] * curr[1]`|每次执行下一个recursion时，决定因素是curr的value：`rooms[curr[0]-1][curr[1]-1]`|
 
+2. 有必要找到**最短路径**时，使用bfs！绝不使用dfs
+
+
 ## Thought: Breadth First Search
 
 
 ## Two time-limit codes
+### bfs 13/15
+```python
+rows = int(input())
+columns = int(input())
+rooms = []
+for line in range(rows):
+  rooms.append(list(map(int,input().split())))
+def possibleChild(curr: int):
+  # find the possible children of curr; record if the exit exists
+  res = []
+  found = False
+  for row in range(1,rows+1):
+    for column in range(1,columns+1):
+      if row * column == curr:
+        if row == rows and column == columns:
+          found = True
+        res.append(rooms[row-1][column-1])
+  return (res, found)
+
+def bfs(queue):
+  visited = [queue[0]]
+  while queue:
+    curr = queue.pop(0)
+    children, found = possibleChild(curr)
+    for child in children:
+      if found:
+        return found
+      if child not in visited:
+        visited.append(child)
+        queue.append(child)
+  return found
+if bfs([rooms[0][0]]):
+  print('yes')
+else:
+  print('no')
+```
 #### backtracking
 ```python
 rows = int(input())
