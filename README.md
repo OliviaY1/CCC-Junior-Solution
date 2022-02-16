@@ -21,7 +21,7 @@
 ### 第二套
 |Year|Date J3|Date J4|Date J5|
 |---|---|---|---|
-|2018|Jan 20|Jan 20| Jan20|
+|2018|Jan 20|Jan 20| Jan20 错了|
 |2017|Jan 22|Jan22|Jan22|
 |2016|Jan 22 brute force|Jan22 看看其他解题思路|不会|
 
